@@ -1,0 +1,29 @@
+body {
+	font-family:'Lato','Arial',sans-serif;
+}
+
+h1,h2,h3,h4,h5,h6 {
+	font-family:'Lato','Arial',sans-serif;	
+}
+
+.top-bar {
+	background:none;
+}
+.top-bar .name h1 a {
+	color:#000;
+}
+
+nav {
+	.top-bar-section {
+		ul li {background:none;}
+		li:not(.has-form) a:not(.button) {
+			background:none;
+			padding: 1rem 0.9375rem;
+		}
+		ul > li > a {
+			color: #000;
+			text-transform:uppercase;
+			font-weight: 700;
+		}
+	}
+}
