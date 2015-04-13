@@ -6,7 +6,11 @@
     	<link rel="stylesheet" href="css/foundation.css" />
     	<link rel="stylesheet" href="css/style.css" />
     	<script src="js/vendor/modernizr.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+        <script src="js/app.js"></script>
+        <script src="js/jquery.stellar.min.js"></script>
     	<link href='http://fonts.googleapis.com/css?family=Lato&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
+        <link href='http://fonts.googleapis.com/css?family=Sue+Ellen+Francisco' rel='stylesheet' type='text/css'>
 	</head>
 	<body>
 		<header>
@@ -15,28 +19,93 @@
 					<nav class="top-bar" data-topbar role="navigation">
 					  <ul class="title-area">
 					    <li class="name">
-					      <h1><a href="#">My Site</a></h1>
+					      <h1><a href="#">dan<strong>calise</strong></a></h1>
 					    </li>
 					     <!-- Remove the class "menu-icon" to get rid of menu icon. Take out "Menu" to just have icon alone -->
 					    <li class="toggle-topbar menu-icon"><a href="#"><span>Menu</span></a></li>
 					  </ul>
-
 					  <section class="top-bar-section">
 					    <!-- Right Nav Section -->
 					    <ul class="right">
-					      <li><a href="#">Foreplay</a></li>
-					      <li><a href="#">Butt Stuff</a></li>
-					      <li><a href="#">Fisting</a></li>
-					      <li><a href="#">Bees?</a></li>
+					      <li><a href="#">Projects</a></li>
+					      <li><a href="#">Bio</a></li>
 					    </ul>
 					  </section>
 					</nav>
 				</div>
 			</div>
 		</header>
-		<section>
-			<div style="height:1000px"></div>
+		<section class="home">
+			<div class="title-block">
+                <h1>dan<span>calise</span></h1>
+                <span class="subtitle">web design</span>
+                <ul class="social-icons">
+                    <li id="github"><a href="#" title="Github"></a></li>
+                    <li id="linkedin"><a href="#" title="LinkedIn"></a></li>
+                    <li id="gmail"><a href="#" title="Email"></a></li>
+                </ul>
+            </div>
 		</section>
-
+        <!--start portfolio-->
+        <section class="portfolio">
+            <div class="row">
+                <div class="dots">
+                    <div class="dot medium" data-stellar-ratio=".4"></div>
+                    <div class="dot medium" data-stellar-ratio=".5"></div>
+                    <div class="dot medium" data-stellar-ratio=".6"></div>
+                    <div class="dot medium" data-stellar-ratio=".7"></div>
+                    <div class="dot medium" data-stellar-ratio=".8"></div>
+                    <div class="dot medium" data-stellar-ratio=".9"></div>
+                    <div class="dot medium" data-stellar-ratio="1"></div>
+                </div>
+                <div class="columns medium-4">
+                    <div class="portfolio-wrapper">
+                        <img src="#" alt="Portfolio">
+                        <div class="title">
+                            <h3>Project Title</h3>
+                        </div>
+                    </div>
+                </div>
+                <div class="columns medium-4">
+                    <div class="portfolio-wrapper">
+                        <img src="#" alt="Portfolio">
+                        <div class="title">
+                            <h3>Project Title</h3>
+                        </div>
+                    </div>
+                </div>
+                <div class="columns medium-4">
+                    <div class="portfolio-wrapper">
+                        <img src="#" alt="Portfolio">
+                        <div class="title">
+                            <h3>Project Title</h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--end portfolio-->
+        <!--start bio-->
+        <section class="bio">
+            <div class="row">
+                <div class="columns medium-4">
+                    <!--image-->
+                </div>
+                <div class="columns medium-8">
+                    <p class="bio-text">
+                        Lorum ipsum dolor lorum ipsum. Lorum ipsum dolor lorum ipsum. Lorum ipsum dolor lorum ipsum. Lorum ipsum dolor lorum ipsum. Lorum ipsum dolor lorum ipsum. Lorum ipsum dolor lorum ipsum. Lorum ipsum dolor lorum ipsum.
+                    </p>
+                </div>
+            </div>
+        </section>
+        <!--end bio-->
+        <!--start footer-->
+        <footer>
+            <script>
+            $('section').heightKeeper();
+            $('.portfolio').stellar();
+            </script>
+        </footer>
+        <!--start footer-->
 	</body>
 </html>

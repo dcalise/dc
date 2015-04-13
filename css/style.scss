@@ -1,16 +1,33 @@
+@import 'mixins';
+@import 'dots';
+
 body {
 	font-family:'Lato','Arial',sans-serif;
+    color:#fff;
+    background: #43b5cc; /* Old browsers */
+    background: -moz-radial-gradient(center, ellipse cover,  #43b5cc 0%, #0081a5 100%); /* FF3.6+ */
+    background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%,#43b5cc), color-stop(100%,#0081a5)); /* Chrome,Safari4+ */
+    background: -webkit-radial-gradient(center, ellipse cover,  #43b5cc 0%,#0081a5 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-radial-gradient(center, ellipse cover,  #43b5cc 0%,#0081a5 100%); /* Opera 12+ */
+    background: -ms-radial-gradient(center, ellipse cover,  #43b5cc 0%,#0081a5 100%); /* IE10+ */
+    background: radial-gradient(ellipse at center,  #43b5cc 0%,#0081a5 100%); /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#43b5cc', endColorstr='#0081a5',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+    background-attachment: fixed;
 }
 
 h1,h2,h3,h4,h5,h6 {
-	font-family:'Lato','Arial',sans-serif;	
+	font-family:'Lato','Arial',sans-serif;
+    color:#fff
 }
 
 .top-bar {
 	background:none;
+    display:none
 }
 .top-bar .name h1 a {
-	color:#000;
+  font-family: 'Sue Ellen Francisco', cursive;
+  font-size: 2em;
+  line-height:2em;
 }
 
 nav {
@@ -21,9 +38,52 @@ nav {
 			padding: 1rem 0.9375rem;
 		}
 		ul > li > a {
-			color: #000;
 			text-transform:uppercase;
 			font-weight: 700;
 		}
 	}
+}
+
+.home {
+  position: relative;
+  .title-block {
+    @include center();
+    text-align: center;
+    h1 {
+      font-family: 'Sue Ellen Francisco', cursive;
+      font-size: 6em;
+      text-align: center;
+      margin:0;
+      padding:0;
+      line-height:1;
+      span {
+        font-weight: bold;
+      }
+    }
+    span.subtitle {
+      font-size:.8em;
+      text-transform: uppercase;
+    }
+    ul.social-icons {
+      li {
+        float:left;
+        a {text-decoration:none;}
+      }
+    }
+  }
+}
+
+.portfolio {
+  .columns {
+    position:relative;
+    .title {
+      position:absolute;
+      width:100%;
+      height:100%;
+      background: rgba(255,255,255,.3);
+      h3 {
+        @include center();
+      }
+    }
+  }
 }

@@ -1,0 +1,10 @@
+.dots{
+  .dot {
+    @include border-radius(10px);
+    background-color: #fff;
+    &.medium {
+      width: 6px;
+      height: 6px;
+    }
+  }
+}
